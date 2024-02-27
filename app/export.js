@@ -1,9 +1,9 @@
-import cheese from "../assets/images/cheese.jpg";
-import delicious from "../assets/images/delicious.jpg";
-import peproni from "../assets/images/peproni.jpg";
-import rustica from "../assets/images/rustica.jpg";
-import tomato from "../assets/images/tomato.jpg";
-import vege from "../assets/images/vege.jpg";
+import cheese from "@/public/images/cheese.jpg";
+import delicious from "@/public/images/delicious.jpg";
+import peproni from "@/public/images/peproni.jpg";
+import rustica from "@/public/images/rustica.jpg";
+import tomato from "@/public/images/tomato.jpg";
+import vege from "@/public/images/vege.jpg";
 
 export const pizza = [
   {
