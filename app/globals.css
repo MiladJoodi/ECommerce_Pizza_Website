@@ -2,54 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+#product-box{
+  display: flex !important;
+}
+.slick-slide div{
+  margin: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.slick-arrow::before{
+  color: #ff5a1f;
+  font-size: 50px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.slick-prev{
+  left: -40px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-  @keyframes gradientChange {
-    0% {
-        background-position: 0%
-    }
-
-    50% {
-        background-position: 100%
-    }
-
-    100% {
-        background-position: 0%
-    }
-}
-
-.gradient {
-    background: linear-gradient(90deg, blue, red);
-    background-size: 200% 200%;
-}
-
-.element-to-rotate {
-    animation: gradientChange 4s ease infinite;
-}
+.slick-next{
+  right: -30px;
 }
