@@ -6,17 +6,17 @@
   display: flex !important;
 }
 .slick-slide div{
-  margin: 10px;
+  margin: 10px!important; 
 }
 
 .slick-arrow::before{
-  color: #ff5a1f;
-  font-size: 50px;
+  color: #ff5a1f !important;
+  font-size: 50px!important;
 }
 
 .slick-prev{
-  left: -40px;
+  left: -40px!important;
 }
 .slick-next{
-  right: -30px;
+  right: -30px!important;
 }
