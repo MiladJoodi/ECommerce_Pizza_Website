@@ -24,7 +24,7 @@ function BestSellers() {
       <h1 data-aos="slide-up" className='text-white text-6xl font-bold text-center'>Our Best Sellers</h1>
       <div data-aos="slide-up" className='grid lg:grid-cols-3 grid-cols-1 justify-between items-center gap-6'>
         {pizza.map((item, index) => (
-          <div key={index} className='bg-white dark:bg-gay-800 p-8 flex flex-col justify-center items-center gap-4 rounded-lg'>
+          <div key={index} className='bg-white dark:bg-gray-800 p-8 flex flex-col justify-center items-center gap-4 rounded-lg'>
             <Image
               src={item.image}
               alt="product image"

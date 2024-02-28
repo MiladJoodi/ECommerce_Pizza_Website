@@ -2,8 +2,8 @@
 
 import React from 'react'
 import { useDarkMode } from '../DarkModeContext'
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaArrowUp, FaMoon, FaSun, } from 'react-icons/fa'
-// import { Link } from 'react-scroll'
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaArrowUp, FaMoon, FaSun } from 'react-icons/fa'
+import { Link } from 'react-scroll'
 
 function Footer() {
 
@@ -32,16 +32,24 @@ function Footer() {
 
           <div id="icon-box" className="p-3 rounded-full bg-orange-500 hover:bg-white text-white hover:text-black cursor-pointer transform hover:scale-105 transition-transform duration-300">
             <FaYoutube className="w-[25px] h-[25px]" />
-        </div>
+          </div>
         </div>
       </section>
 
       {/* BUTTONS */}
       <div>
-        {/* <button onClick={toggleDarkMode} className="flex items-center p-4 rounded-full bg-orange-500 fixed lg:bottom-6 left-6 botton-6">
+        <button onClick={toggleDarkMode} className="flex items-center p-4 rounded-full bg-orange-500 fixed lg:bottom-6 left-6 botton-6">
           {darkmode ? <FaMoon size={30} className="'text-black" /> : <FaSun size={30} className="'text-black" />}
-        </button> */}
+        </button>
       </div>
+
+      {/* scroll to top button */}
+      <div id="icon-box" className="bg-orange-500 text-black p-3 rounded-full hover:bg-white cursor-pointer fixed lg:bottom-6 right-6 bottom-6">
+        <Link to="hero" spy={true} offset={-100} smooth={true}>
+          <FaArrowUp className="w-[35px] h-[35px]" />
+        </Link>
+      </div>
+
     </>
   )
 }
