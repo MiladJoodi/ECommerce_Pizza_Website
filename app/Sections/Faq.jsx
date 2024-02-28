@@ -17,10 +17,10 @@ function Faq() {
     })
   }, [])
 
-  const { darkMode, toggleDarkMode } = useDarkMode()
+  const { darkmode, toggleDarkMode } = useDarkMode()
 
   return (
-    <section id='faq' className={`${darkMode ? 'dark bg-black' : 'light bg-light'} w-full lg:px-20 px-10 lg:py-20 py-10 grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-14`}>
+    <section id='faq' className={`${darkmode ? 'dark bg-black' : 'light bg-light'} w-full lg:px-20 px-10 lg:py-20 py-10 grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-14`}>
 
       {/*LEFT  */}
       <div id='left' className='flex flex-col justify-center items-center gap-12'>

@@ -16,11 +16,11 @@ function About() {
     })
   }, [])
 
-  const { darkMode, toggleDarkMode } = useDarkMode()
+  const { darkmode, toggleDarkMode } = useDarkMode()
 
   return (
     <>
-      <section id='about' className={`${darkMode ? 'dark bg-black' : 'light bg-white'} w-full lg:px-20 px-10 lg:py-20 py-10 h-fit grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-10`}>
+      <section id='about' className={`${darkmode ? 'dark bg-black' : 'light bg-white'} w-full lg:px-20 px-10 lg:py-20 py-10 h-fit grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-10`}>
 
         {/* ITEM 1 */}
         <div data-aos="zoom-in" data-aos-delay="200" className='border-[4px] border-orange-600 dark:border-orange-400 p-14 flex flex-col justify-center items-center gap-6 rounded-xl hover:bg-orange-100 cursor-pointer'>
@@ -72,7 +72,7 @@ function About() {
 
       </section>
 
-      <section className={`${darkMode ? 'dark bg-black' : 'light bg-white'} w-full lg:px-20 px-10 lg:py-20 py-10 h-fit grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-10`}>
+      <section className={`${darkmode ? 'dark bg-black' : 'light bg-white'} w-full lg:px-20 px-10 lg:py-20 py-10 h-fit grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-10`}>
       <div>
       <Image
             src="/images/about1.jpg"

@@ -57,9 +57,9 @@ const TopRated = () => {
     ]
   };
 
-  const { darkMode, toggleDarkMode } = useDarkMode()
+  const { darkmode, toggleDarkMode } = useDarkMode()
   return (
-    <section id='pizza' className={`${darkMode ? 'dark bg-black' : 'light bg-white'} h-fit w-full lg:px-20 px-3 lg:py-20 py-10 flex flex-col justify-center items-center gap-6`}>
+    <section id='pizza' className={`${darkmode ? 'dark bg-black' : 'light bg-white'} h-fit w-full lg:px-20 px-3 lg:py-20 py-10 flex flex-col justify-center items-center gap-6`}>
       <h1 data-aos="zoom-in" className='text-6xl text-black dark:text-white font-bold txet-center'>Top Rated</h1>
       <p data-aos="zoom-in" className='text-xl text-black dark:text-slate-100 text-center'>Stop by and find out what all the buzz is about. Order your favorites today
         or visit our restaurant to create your ideal pizza!</p>

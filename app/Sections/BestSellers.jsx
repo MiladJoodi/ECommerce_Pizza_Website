@@ -1,6 +1,5 @@
 "use client"
 import React, { useEffect } from 'react'
-// import { useDarkMode } from '../DarkModeContext'
 import { pizza } from '../export'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -17,11 +16,11 @@ function BestSellers() {
     })
   }, [])
 
-  const { darkMode, toggleDarkMode } = useDarkMode()
+  const { darkmode, toggleDarkMode } = useDarkMode()
 
 
   return (
-    <section className={`${darkMode? 'dark bg-black' : 'light bg-black'} w-full lg:px-20px px-10 lg:py-20 py-10 h-fit flex flex-col justify-center items-center gap-14`}>
+    <section className={`${darkmode? 'dark bg-black' : 'light bg-black'} w-full lg:px-20px px-10 lg:py-20 py-10 h-fit flex flex-col justify-center items-center gap-14`}>
       <h1 data-aos="slide-up" className='text-white text-6xl font-bold text-center'>Our Best Sellers</h1>
       <div data-aos="slide-up" className='grid lg:grid-cols-3 grid-cols-1 justify-between items-center gap-6'>
         {pizza.map((item, index) => (
