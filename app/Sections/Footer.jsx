@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDarkMode } from '../DarkModeContext'
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaArrowUp, FaMoon, DaSun } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaArrowUp, FaMoon, DaSun, FaFacebook } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 
 function Footer() {
@@ -14,7 +14,7 @@ function Footer() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, itaque!</p>
 
         <div id="icon-box" className="">
-
+          <FaFacebook className="w-[25px] h-[25px]" />
         </div>
       </section>
     </>
